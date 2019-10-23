@@ -8,3 +8,15 @@ git describe --tags `git rev-list --tags --max-count=1`
 git tag --points-at
 
 ```
+
+- tag所在分支
+
+```git
+git branch -a --contains tags/<tag>
+```
+
+- 最后的tag所在分支
+
+```git
+git tag --points-at | xargs git branch --contains
+```
