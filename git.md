@@ -4,4 +4,7 @@
 
 ```git
 git describe --tags `git rev-list --tags --max-count=1`
+# 或者
+git tag --points-at
+
 ```
