@@ -4,7 +4,13 @@
 
 ```git
 git describe --tags `git rev-list --tags --max-count=1`
-# 或者
+git tag --points-at
+
+```
+
+- 当前分支所指向的tag
+
+```git
 git tag --points-at
 
 ```
